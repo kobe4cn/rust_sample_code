@@ -10,7 +10,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # 复制依赖文件
-COPY Cargo.toml Cargo.lock ./
+# 注意：Cargo.lock 可能不存在（如果被 .gitignore 排除），Cargo 会在构建时自动生成
+COPY Cargo.toml ./
 
 # 创建虚拟项目以缓存依赖
 RUN mkdir src && echo "fn main() {}" > src/main.rs && \
