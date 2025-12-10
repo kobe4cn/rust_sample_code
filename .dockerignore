@@ -1,0 +1,32 @@
+# Git
+.git
+.gitignore
+.github
+
+# Rust
+target/
+**/*.rs.bk
+Cargo.lock
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Documentation
+*.md
+docs/
+
+# CI/CD
+.github/
+
+# UI (如果不需要在容器中)
+ui/
+node_modules/
+
+# 其他
+.env
+.env.local
+*.log

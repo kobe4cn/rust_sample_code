@@ -1,7 +1,7 @@
 [package]
 name = "boot_camp"
 version = "0.1.0"
-authors = ["Your Name <YourName@yourdomain.com>"]
+authors = ["Kevin Yang <kevin.yang.xgz@gmail.com>"]
 edition = "2024"
 license = "MIT"
 documentation = "https://docs.rs/"
