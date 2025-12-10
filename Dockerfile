@@ -1,5 +1,6 @@
 # 多阶段构建 - 构建阶段
-FROM rust:1.75-slim AS builder
+# 使用最新稳定版本以支持 edition 2024
+FROM rust:latest-slim AS builder
 
 WORKDIR /app
 
