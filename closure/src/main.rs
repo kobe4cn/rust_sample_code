@@ -1,6 +1,6 @@
 use anyhow::Result;
-use boot_camp::Config;
-use boot_camp::run;
+use closure::{Config, run};
+
 use std::env;
 
 /// 程序入口点

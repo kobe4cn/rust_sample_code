@@ -3,3 +3,4 @@ Cargo.lock
 .vscode
 /adder/target
 /closure/target
+/thread/target

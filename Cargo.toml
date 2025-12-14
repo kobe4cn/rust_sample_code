@@ -1,20 +1,10 @@
-[package]
-name = "boot_camp"
-version = "0.1.0"
-authors = ["Kevin Yang <kevin.yang.xgz@gmail.com>"]
-edition = "2024"
-license = "MIT"
-documentation = "https://docs.rs/"
-repository = "https://github.com/TODO"
-homepage = "https://github.com/TODO"
-description = """
+[workspace]
 
-"""
-readme = "README.md"
-categories = ["development-tools"]
-keywords = []
+members = ["thread", "closure", "adder"]
+resolver = "2"
 
-[dependencies]
+
+[workspace.dependencies]
 anyhow = "1.0.98"
 serde = { version = "1.0.219", features = ["derive"] }
 serde_json = "1.0.142"
