@@ -4,13 +4,16 @@ use std::{sync::mpsc, thread};
 fn main() -> Result<()> {
     let (tx, rx) = mpsc::channel();
     thread::spawn(move || {
-        let val = String::from("hi");
-        match tx.send(val.clone()) {
-            Ok(_) => println!("Sent: {} successfully", val),
-            Err(e) => println!("Error sending: {}", e),
+        let val = vec![1, 2, 3, 4, 5];
+        for i in val {
+            match tx.send(i) {
+                Ok(_) => println!("Sent: {} successfully", i),
+                Err(e) => println!("Error sending: {}", e),
+            }
         }
     });
-    let received = rx.recv()?;
-    println!("Received: {}", received);
+    while let Ok(received) = rx.recv() {
+        println!("Received: {}", received);
+    }
     Ok(())
 }
