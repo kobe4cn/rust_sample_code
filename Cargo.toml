@@ -1,6 +1,6 @@
 [workspace]
 
-members = ["thread", "closure", "adder"]
+members = ["thread", "closure", "adder", "objective"]
 resolver = "2"
 
 
