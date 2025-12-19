@@ -1,4 +1,4 @@
-![](https://github.com/tyrchen/rust-lib-template/workflows/build/badge.svg)
+
 
 # boot_camp
 
@@ -7,7 +7,7 @@ description of the crate
 ## How to use it
 
 ```bash
-$ cargo generate --git https://github.com/tyrchen/rust-lib-template
+$ cargo generate --git https://github.com/kobe4cn/rust-lib-template
 ```
 
 Have fun with this crate!
